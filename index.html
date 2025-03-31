@@ -26,5 +26,27 @@
 <button onclick="findPath()">Запустить алгоритм</button>
     <div id="box" class="container"></div>
     <script src="script.js"></script>
+
+    <div class="A">Алгоритм кластеризации</div>
+    
+    <svg id="graphArea" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Сетка -->
+        <defs>
+            <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#ddd" stroke-width="1"/>
+            </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)"/> 
+
+        <!-- Оси -->
+        <line x1="0", y1="200", x2="200", y2="200"class="axis"/> <!-- Ось X -->
+        <line x1="0", y1="200", x2="0", y2="0" class="axis"/> <!-- Ось Y -->
+
+        <!-- Подписи -->
+        <text x="185" y="190" class="axis-label">X</text>
+        <text x="10" y="15" class="axis-label">Y</text>
+    </svg>
+</div>
 </body>
 </html>
+
